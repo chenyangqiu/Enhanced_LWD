@@ -1,0 +1,27 @@
+name: dgl_env
+channels:
+  - pytorch
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - scipy
+  - ipython
+  - jupyter
+  - tqdm
+  - pip:
+      - torch==2.1.1+cu121
+      - torchvision==0.16.1+cu121
+      - torchaudio==2.1.1
+      - torchdata==0.7.1
+      - dgl-cu121 @ https://data.dgl.ai/wheels/cu121/repo.html
+      - pydantic==2.11.1
+      - rich
+      - sympy
+      - python-pptx
+      - XlsxWriter
